@@ -5,11 +5,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const pool = mysql.createPool({
-  host: "turntable.proxy.rlwy.net",           // 🔁 Updated host
+  host: "centerbeam.proxy.rlwy.net",           // 🔁 Updated host
   user: "root",                                // ✅ Username
-  password: "GAhZhQoWtcCqAgqCjnAJFFHYiIIsKvFY", // ✅ Password
+  password: "aRZFUqgtOIjutrhEgOluITEwRameQaXp", // ✅ Password
   database: "railway",                         // ✅ Database
-  port: 21387,                                 // 🔁 Updated port
+  port: 11477,                                 // 🔁 Updated port
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
@@ -27,6 +27,8 @@ pool.getConnection((err, connection) => {
 const db = pool.promise();
 
 export default db;
+
+
 
 
 // import mysql from 'mysql2';
