@@ -16,7 +16,8 @@ export const io = new Server(server, {
     origin: [
       "https://apply.studyfirstinfo.com",
       "http://localhost:5173",
-      "https://afsana-crm-project.netlify.app"
+      "https://afsana-crm-project.netlify.app",
+      "https://student-crm-g.netlify.app"
     ],
     methods: ["GET", "POST"],
     credentials: true
