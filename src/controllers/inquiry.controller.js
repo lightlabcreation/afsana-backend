@@ -97,8 +97,8 @@ export const createInquiry = async (req, res) => {
          course_name, country, city, date_of_birth, gender, medium, study_level, study_field,
     intake, budget, consent,  highest_level, ssc, hsc ,bachelor ,university , test_type, test_name, overall_score, reading_score, writing_score, speaking_score, listening_score,   date_of_inquiry, address, present_address, additionalNotes ,
         study_gap, visa_refused, refusal_reason, education_background, english_proficiency, company_name, job_title, 
-         job_duration, preferred_countries, lead_status,payment_status, assignment_description, priority)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, ?);`,
+         job_duration, preferred_countries, lead_status, new_leads, payment_status, assignment_description, priority)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Converted to Lead', 'new', 0, 0, ?);`,
       [
         formattedCounselorId, inquiry_type, source, branch, full_name, phone_number, email,
         course_name, country, city, date_of_birth, gender, medium, study_level, study_field,
